@@ -17,7 +17,7 @@ body {
 
 .hero-container {
   width: 100%;
-  background: url(/assets/bg-image.png);
+  background: url("./assets/bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -123,7 +123,7 @@ body {
 }
 
 .service-desc-container {
-  background: url(/assets/world-map1.png), #0058530d;
+  background: url("./assets/world-map1.png"), #0058530d;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 30px;
@@ -485,8 +485,7 @@ h2 {
   }
 
   .navigation-icons {
-  }
-  .nav-icon {
+    display: none;
   }
 
   .hero-content {
