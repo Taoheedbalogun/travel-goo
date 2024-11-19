@@ -23,33 +23,55 @@ body {
   height: 100%;
 }
 
-.navigation {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  height: 80px;
+  margin-bottom: 60px;
   align-items: center;
+  padding: 30px 0;
+  position: relative;
 }
 
 .logo {
+  width: 200px;
   margin-left: 8rem;
 }
 
-.navigation-list {
+nav ul {
   display: flex;
+  align-items: center;
 }
-.nav-list {
+
+nav ul li {
+  list-style-type: none;
   margin: 1rem;
-  color: white;
-  font-size: 1.6rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .navigation-icons {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-icon {
   margin: 1rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  color: #fff;
+  font-size: 3rem;
 }
 
 .hero-content {
@@ -368,8 +390,8 @@ h2 {
 .subscribe-box {
   border: 1px solid #32df8f;
   background-color: #9fffec;
-  width: 500px;
-  height: 200px;
+  width: 550px;
+  height: 250px;
   margin: 30px auto;
   border-radius: 60px 10px 10px 10px;
   text-align: center;
@@ -397,7 +419,7 @@ h2 {
 }
 .subscribe-buttons input {
   height: 40px;
-  width: 200px;
+  width: 250px;
   border: 0;
   border-radius: 5px;
   padding-left: 15px;
@@ -406,7 +428,7 @@ h2 {
 .subscribe-buttons button {
   background-color: #00a651;
   height: 40px;
-  width: 100px;
+  width: 150px;
   border: 0;
   border-radius: 5px;
   color: white;
@@ -469,22 +491,54 @@ h2 {
   .hero-container {
   }
 
-  .navigation {
+  nav {
     padding: 1rem;
   }
 
   .logo {
     margin: 1rem;
-  }
-
-  .navigation-list {
-    flex-direction: column;
-  }
-  .nav-list {
-    margin-left: 2rem;
+    width: 50px;
   }
 
   .navigation-icons {
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    text-align: center;
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  nav ul li {
+    margin: 1rem;
+  }
+
+  .navigation img {
+    width: 100px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  #menu-list {
+    transition: all 350ms;
+  }
+
+  nav ul li a {
+    font-size: 1.6rem;
+    margin: 10px;
+  }
+
+  .nav-btn {
     display: none;
   }
 
@@ -607,19 +661,16 @@ h2 {
   }
 
   .subscribe-box {
-    width: 90%;
+    width: 95%;
     padding: 20px;
   }
   .subscribe-box p {
     font-size: 1.6rem;
-  }
-
-  .subscribe-buttons {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .subscribe-buttons button {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   /* FOOTER SECTION */
