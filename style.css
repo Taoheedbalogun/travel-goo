@@ -27,16 +27,14 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
-  height: 80px;
   margin-bottom: 60px;
   align-items: center;
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
 }
 
 .logo {
-  width: 200px;
+  width: 100px;
   margin-left: 8rem;
 }
 
@@ -299,7 +297,7 @@ p {
 }
 
 .package-card {
-  width: 400px;
+  width: 340px;
   height: 300px;
   border-radius: 10px;
   margin: 15px;
@@ -496,7 +494,7 @@ h2 {
   }
 
   .logo {
-    margin: 1rem;
+    margin-left: 1rem;
     width: 50px;
   }
 
