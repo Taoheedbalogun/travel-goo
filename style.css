@@ -65,11 +65,12 @@ nav ul li a {
 
 .menu-icon {
   display: none;
+  margin-right: 10px;
 }
 
 .menu-icon i {
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .hero-content {
